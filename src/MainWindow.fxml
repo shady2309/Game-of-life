@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainWindow">
+   <children>
+      <Canvas fx:id="canvas" height="800.0" onMouseClicked="#click" width="800.0" />
+      <Button layoutX="822.0" layoutY="558.0" mnemonicParsing="false" onAction="#reset" prefHeight="25.0" prefWidth="150.0" text="Reset" textFill="#521c78">
+         <font>
+            <Font name="Perpetua" size="14.0" />
+         </font></Button>
+      <Button layoutX="822.0" layoutY="430.0" mnemonicParsing="false" onAction="#start" prefHeight="25.0" prefWidth="150.0" text="Start" textAlignment="CENTER" textFill="#c71f4c">
+         <font>
+            <Font name="Papyrus" size="14.0" />
+         </font></Button>
+      <Button layoutX="822.0" layoutY="484.0" mnemonicParsing="false" onAction="#stop" prefHeight="25.0" prefWidth="150.0" text="Stop" textFill="#8f0a3f">
+         <font>
+            <Font name="Papyrus" size="14.0" />
+         </font></Button>
+      <Button layoutX="846.0" layoutY="191.0" mnemonicParsing="false" onAction="#unchanging" text="Unchanging" textAlignment="CENTER" textFill="#c42d2d">
+         <font>
+            <Font name="Perpetua" size="16.0" />
+         </font></Button>
+      <Button layoutX="862.0" layoutY="230.0" mnemonicParsing="false" onAction="#glider" text="Glider" textAlignment="CENTER" textFill="#ca1e1e">
+         <font>
+            <Font name="Perpetua" size="16.0" />
+         </font></Button>
+      <Button layoutX="852.0" layoutY="270.0" mnemonicParsing="false" onAction="#oscillator" text="Oscillator" textFill="#bf1f1f">
+         <font>
+            <Font name="Perpetua" size="16.0" />
+         </font></Button>
+      <Button layoutX="856.0" layoutY="312.0" mnemonicParsing="false" onAction="#random" text="Random" textFill="#af1e1e">
+         <font>
+            <Font name="Perpetua" size="16.0" />
+         </font></Button>
+      <Text layoutX="824.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select an initial state" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Perpetua" size="20.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fill="#b71e1e" layoutX="828.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="if you want a manual initial state then just start clicking" wrappingWidth="138.333984375">
+         <font>
+            <Font name="Perpetua" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
